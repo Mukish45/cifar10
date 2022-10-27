@@ -2,9 +2,8 @@ import streamlit as st
 import cv2
 import numpy as np
 from PIL import Image
-import matplotlib.pyplot as plt
 from tensorflow import keras
-model = keras.models.load_model('/Users/mukish/Documents/Sem-5/Advanced Machine Learning Lab/Deployment/Mymodel.h5')
+model = keras.models.load_model('Mymodel.h5')
 
 upload_image = st.file_uploader(label='Upload image', type=['png', 'jpg','jpeg'], accept_multiple_files=False)
 if upload_image is not None:
